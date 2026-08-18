@@ -1,21 +1,14 @@
-# Agentic Wizard of Oz
+# Agentic Wizard of Oz Experiment demo
 
-**ROB 340: Human Evaluation of Robots** - Lab 5, Part 1.2 (extension)
+**ROB 340: Human Evaluation of Robots** 
 
-In the classic Wizard of Oz method, a hidden human operates the robot while the
-participant believes it is acting on its own. Here that hidden human is replaced
-by an LLM agent.
+-The hidden human is replaced by an LLM agent.
 
-You speak. The agent listens, decides what the robot arm should do, writes and
-compiles Arduino code when the task needs it, asks your permission, and moves
-the arm.
 
 ## Setup
 
 **[Installation and Setup](SETUP.md)** - follow it from top to bottom.
 
-Everything runs against a built-in simulator, so you can complete the setup and
-try the lab before touching hardware.
 
 ## Running it
 
@@ -31,9 +24,7 @@ Then, inside Claude Code:
 ```
 /woz
 ```
-
-That is the last thing you type. After that you only speak. A second window
-opens and shows what the microphone is doing:
+**A second window will open and show what the microphone is doing:
 
 | The window shows | What to do |
 |---|---|
