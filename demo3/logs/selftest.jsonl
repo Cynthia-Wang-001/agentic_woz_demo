@@ -1,0 +1,8 @@
+{"tool": "get_arm_state", "pose": [20, 90, 90, 90, 90, 90, 40], "time": "2026-08-18T19:02:03"}
+{"tool": "move_arm", "requested": [20, 45, 120, 90, 90, 90, 10], "previous": [20, 90, 90, 90, 90, 90, 40], "safety_on": true, "problems": [], "result": "sent", "time": "2026-08-18T19:02:03"}
+{"tool": "move_arm", "requested": [20, 45, 200, 90, 90, 90, 10], "previous": [20, 45, 120, 90, 90, 90, 10], "safety_on": true, "problems": ["shoulder = 200 is outside the valid range 15 to 165."], "result": "refused by safety check", "time": "2026-08-18T19:02:03"}
+{"tool": "home_arm", "result": "OK 20 90 90 90 90 90 40  (simulated)", "time": "2026-08-18T19:02:03"}
+{"tool": "get_arm_state", "pose": [20, 90, 90, 90, 90, 90, 40], "time": "2026-08-18T19:02:03"}
+{"tool": "move_arm", "requested": [20, 45, 120, 90, 90, 90, 10], "previous": [20, 90, 90, 90, 90, 90, 40], "safety_on": false, "problems": [], "result": "sent", "time": "2026-08-18T19:02:03"}
+{"tool": "move_arm", "requested": [20, 45, 200, 90, 90, 90, 10], "previous": [20, 45, 120, 90, 90, 90, 10], "safety_on": false, "problems": ["shoulder = 200 is outside the valid range 15 to 165."], "result": "sent with safety off", "time": "2026-08-18T19:02:04"}
+{"tool": "home_arm", "result": "OK 20 90 90 90 90 90 40  (simulated)", "time": "2026-08-18T19:02:04"}

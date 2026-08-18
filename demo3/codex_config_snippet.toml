@@ -1,0 +1,37 @@
+# Codex configuration for the Braccio arm
+#
+# Codex does not read a project level config file the way Claude Code reads
+# .mcp.json, so this block has to be added to your personal Codex config:
+#
+#     ~/.codex/config.toml
+#
+# Replace the path below with the real location of this folder. Codex needs an
+# absolute path here, because it does not necessarily start in this directory.
+#
+# Find the absolute path by running this inside the project folder:
+#
+#     pwd
+#
+# On Windows the path looks like C:\\Users\\yourname\\wizardofozllm
+
+[mcp_servers.braccio]
+command = "python3"
+args = ["/ABSOLUTE/PATH/TO/wizardofozllm/arm_mcp_server.py"]
+
+[mcp_servers.braccio.env]
+WOZ_PORT = "sim"
+WOZ_SAFETY = "on"
+WOZ_LOG = "/ABSOLUTE/PATH/TO/wizardofozllm/logs/arm_calls.jsonl"
+
+# To use a real arm instead of the simulator, set WOZ_PORT to the serial port:
+#
+#     macOS    WOZ_PORT = "/dev/tty.usbmodem14201"
+#     Linux    WOZ_PORT = "/dev/ttyACM0"
+#     Windows  WOZ_PORT = "COM3"
+#
+# To switch the software safety check off for the Layer experiments:
+#
+#     WOZ_SAFETY = "off"
+#
+# Codex reads AGENTS.md from the working directory, so start Codex from inside
+# the project folder for it to pick up the robot instructions.

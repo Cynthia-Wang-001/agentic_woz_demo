@@ -1,0 +1,24 @@
+# Demo 1 - Agentic Wizard of Oz
+#
+#     pip install -r requirements.txt
+#
+# Two things are NOT installed by this file, because they are installed
+# differently. See the README.
+#
+#   1. Whisper        python3 -m pip install git+https://github.com/openai/whisper.git
+#   2. The agent      npm install -g @anthropic-ai/claude-code
+#                     npm install -g @openai/codex
+#
+# ffmpeg is also needed, and is not a Python package:
+#   macOS    brew install ffmpeg
+#   Ubuntu   sudo apt install ffmpeg
+#   Windows  winget install ffmpeg
+
+# Talking to the Arduino over the serial port.
+# Not needed if you only ever use the simulator.
+pyserial>=3.5
+
+# Recording from the microphone in listen.py.
+# Not needed if you record with another app and use: python listen.py --file
+sounddevice>=0.4.6
+numpy>=1.24
